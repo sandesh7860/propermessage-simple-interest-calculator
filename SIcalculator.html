@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<br>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <button onclick="showDate()">Show Date</button>
+    <p id="currentdate"></p>
+    <title>Simple Interest Calculator</title>
+  </head>
+  <br>
+  <div class="maindiv">
+    <h1>Simple Interest Calculator</h1>
+    <p>Enter the following details to calculate simple interest:</p>
+    <br>
+    <label for="principal">Principal amount:</label>
+    <input type="number" id="principal" name="principal" required><br><br>
+    <span>Rate:</span>
+    <input type="range" min="1" max="20" value="10.25" step="0.25" class="slider" id="rate" onchange="updateRate()"> <span id="rate_val">10.25%</span><br><br>
+    <label for="time">Time in years:</label>
+    <select id="time">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select><br><br>
+    <button type="button" onclick="compute()">Compute Interest</button><br><br>
+    <div id="result"></div>
+  </div>
+  <br>
+    <footer class ="footer">
+      <p></p>&copy;2023 Sandesh Shahi. All rights reserved.</p>
+  </footer>
+  <script src="SIcalculator.js"></script>
+ 
+</html>
+  </body>
